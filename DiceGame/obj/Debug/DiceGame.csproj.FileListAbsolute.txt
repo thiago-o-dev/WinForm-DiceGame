@@ -8,3 +8,13 @@ C:\Users\Aula\source\repos\DiceGame\DiceGame\obj\Debug\DiceGame.csproj.GenerateR
 C:\Users\Aula\source\repos\DiceGame\DiceGame\obj\Debug\DiceGame.csproj.CoreCompileInputs.cache
 C:\Users\Aula\source\repos\DiceGame\DiceGame\obj\Debug\DiceGame.exe
 C:\Users\Aula\source\repos\DiceGame\DiceGame\obj\Debug\DiceGame.pdb
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\obj\Debug\DiceGame.csproj.AssemblyReference.cache
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\obj\Debug\DiceGame.Form1.resources
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\obj\Debug\DiceGame.csproj.GenerateResource.cache
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\obj\Debug\DiceGame.exe
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\obj\Debug\DiceGame.pdb
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\bin\Debug\DiceGame.exe.config
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\bin\Debug\DiceGame.exe
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\bin\Debug\DiceGame.pdb
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\obj\Debug\DiceGame.Properties.Resources.resources
+C:\Users\Thiago\source\repos\BachareladoCC\WinForm-DiceGame\DiceGame\obj\Debug\DiceGame.csproj.CoreCompileInputs.cache

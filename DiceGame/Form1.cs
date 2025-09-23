@@ -21,7 +21,7 @@ namespace DiceGame
             _diceController = new GameManager.DiceController(pictureBox1);
 
             GameManager.isEndTurn += UpdateCurrentPlayer;
-
+            GameManager.onDiceEndSpinning += UpdateDiceCounter;
             
         }
 
@@ -38,6 +38,11 @@ namespace DiceGame
         private void btnManter_Click(object sender, EventArgs e)
         {
             _diceController.MaintainDice();
+        }
+
+        private void UpdateDiceCounter()
+        {
+            numIndicator.Text = _diceController.GetCurrentSpin().ToString();
         }
 
         private void UpdateCurrentPlayer()

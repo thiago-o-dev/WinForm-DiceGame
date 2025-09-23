@@ -13,9 +13,13 @@ namespace DiceGame
     {
         public static Action isEndTurn;
 
+        public static Action onDiceEndSpinning;
+
         public class DiceController
         {
-            static string rootpath = "C:\\Users\\Aula\\source\\repos\\DiceGame\\DiceGame\\";
+            static string appBaseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            static string rootpath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(appBaseDirectory))) + "\\";
 
             string spinningDice = rootpath + "Resources\\DiceAssets\\dicerolling_gif.gif";
 
@@ -39,6 +43,11 @@ namespace DiceGame
                 GameManager.isEndTurn += ResetDice;
                 _diceReference = diceReference;
                 _randInt = new Random();
+
+                Console.WriteLine(rootpath);
+                Console.WriteLine(appBaseDirectory);
+
+                Console.WriteLine(string.Join("\n", diceStatic));
             }
 
             public async Task SpinDice(bool isRigged)
@@ -65,7 +74,7 @@ namespace DiceGame
 
                 await Task.Delay(waitTime);
 
-                _diceReference.ImageLocation = diceStatic[diceResult];
+                _diceReference.ImageLocation = diceStatic[diceResult-1];
 
                 currentSpin = diceResult;
 
@@ -73,9 +82,11 @@ namespace DiceGame
                 {
                     remainingSpins--;
                     isSpinning = false;
+                    GameManager.onDiceEndSpinning();
                 }
                 else
                 {
+                    GameManager.onDiceEndSpinning();
                     GameManager.isEndTurn();
                 }
             }

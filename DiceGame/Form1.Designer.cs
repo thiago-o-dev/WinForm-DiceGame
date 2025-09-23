@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnRoubar = new System.Windows.Forms.Button();
             this.btnRolar = new System.Windows.Forms.Button();
             this.lblName1 = new System.Windows.Forms.Label();
             this.lblName2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnManter = new System.Windows.Forms.Button();
+            this.numIndicator = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DiceGame.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(290, 211);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(296, 211);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -51,7 +52,7 @@
             // 
             // btnRoubar
             // 
-            this.btnRoubar.Location = new System.Drawing.Point(415, 363);
+            this.btnRoubar.Location = new System.Drawing.Point(421, 363);
             this.btnRoubar.Name = "btnRoubar";
             this.btnRoubar.Size = new System.Drawing.Size(75, 23);
             this.btnRoubar.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             // btnRolar
             // 
-            this.btnRolar.Location = new System.Drawing.Point(290, 363);
+            this.btnRolar.Location = new System.Drawing.Point(296, 363);
             this.btnRolar.Name = "btnRolar";
             this.btnRolar.Size = new System.Drawing.Size(75, 23);
             this.btnRolar.TabIndex = 2;
@@ -92,19 +93,10 @@
             this.lblName2.Text = "Nome Jogador 2";
             this.lblName2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(364, 9);
+            this.label2.Location = new System.Drawing.Point(380, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 6;
@@ -112,13 +104,21 @@
             // 
             // btnManter
             // 
-            this.btnManter.Location = new System.Drawing.Point(354, 388);
+            this.btnManter.Location = new System.Drawing.Point(360, 388);
             this.btnManter.Name = "btnManter";
             this.btnManter.Size = new System.Drawing.Size(75, 23);
             this.btnManter.TabIndex = 7;
             this.btnManter.Text = "Manter";
             this.btnManter.UseVisualStyleBackColor = true;
             this.btnManter.Click += new System.EventHandler(this.btnManter_Click);
+            // 
+            // numIndicator
+            // 
+            this.numIndicator.Location = new System.Drawing.Point(380, 211);
+            this.numIndicator.Name = "numIndicator";
+            this.numIndicator.Size = new System.Drawing.Size(35, 13);
+            this.numIndicator.TabIndex = 5;
+            this.numIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -128,7 +128,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnManter);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numIndicator);
             this.Controls.Add(this.lblName2);
             this.Controls.Add(this.lblName1);
             this.Controls.Add(this.btnRolar);
@@ -149,9 +149,9 @@
         private System.Windows.Forms.Button btnRolar;
         private System.Windows.Forms.Label lblName1;
         private System.Windows.Forms.Label lblName2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnManter;
+        private System.Windows.Forms.Label numIndicator;
     }
 }
 
