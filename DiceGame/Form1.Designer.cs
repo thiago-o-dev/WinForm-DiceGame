@@ -37,6 +37,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnManter = new System.Windows.Forms.Button();
             this.numIndicator = new System.Windows.Forms.Label();
+            this.turnIndicator = new System.Windows.Forms.Label();
+            this.lastDicePlayer1 = new System.Windows.Forms.Label();
+            this.lastDicePlayer2 = new System.Windows.Forms.Label();
+            this.turnWinIndicator = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,22 +80,21 @@
             this.lblName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.lblName1.Location = new System.Drawing.Point(12, 31);
             this.lblName1.Name = "lblName1";
-            this.lblName1.Size = new System.Drawing.Size(254, 37);
+            this.lblName1.Size = new System.Drawing.Size(159, 37);
             this.lblName1.TabIndex = 3;
-            this.lblName1.Text = "Nome Jogador 1";
+            this.lblName1.Text = "Jogador 1";
             this.lblName1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblName2
             // 
             this.lblName2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblName2.AutoSize = true;
             this.lblName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.lblName2.Location = new System.Drawing.Point(534, 31);
             this.lblName2.Name = "lblName2";
             this.lblName2.Size = new System.Drawing.Size(256, 37);
             this.lblName2.TabIndex = 4;
-            this.lblName2.Text = "Nome Jogador 2";
-            this.lblName2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblName2.Text = "Jogador 2";
+            this.lblName2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
@@ -120,12 +123,51 @@
             this.numIndicator.TabIndex = 5;
             this.numIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // turnIndicator
+            // 
+            this.turnIndicator.Location = new System.Drawing.Point(296, 49);
+            this.turnIndicator.Name = "turnIndicator";
+            this.turnIndicator.Size = new System.Drawing.Size(200, 13);
+            this.turnIndicator.TabIndex = 8;
+            this.turnIndicator.Text = "Turno do Jogador 1";
+            this.turnIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lastDicePlayer1
+            // 
+            this.lastDicePlayer1.Location = new System.Drawing.Point(16, 68);
+            this.lastDicePlayer1.Name = "lastDicePlayer1";
+            this.lastDicePlayer1.Size = new System.Drawing.Size(200, 13);
+            this.lastDicePlayer1.TabIndex = 9;
+            this.lastDicePlayer1.Text = "Ultimo dado do Jogador 1: 0";
+            this.lastDicePlayer1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lastDicePlayer2
+            // 
+            this.lastDicePlayer2.Location = new System.Drawing.Point(579, 68);
+            this.lastDicePlayer2.Name = "lastDicePlayer2";
+            this.lastDicePlayer2.Size = new System.Drawing.Size(200, 13);
+            this.lastDicePlayer2.TabIndex = 10;
+            this.lastDicePlayer2.Text = "Ultimo dado do Jogador 2: 0";
+            this.lastDicePlayer2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // turnWinIndicator
+            // 
+            this.turnWinIndicator.Location = new System.Drawing.Point(296, 118);
+            this.turnWinIndicator.Name = "turnWinIndicator";
+            this.turnWinIndicator.Size = new System.Drawing.Size(200, 13);
+            this.turnWinIndicator.TabIndex = 11;
+            this.turnWinIndicator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.turnWinIndicator);
+            this.Controls.Add(this.lastDicePlayer2);
+            this.Controls.Add(this.lastDicePlayer1);
+            this.Controls.Add(this.turnIndicator);
             this.Controls.Add(this.btnManter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.numIndicator);
@@ -152,6 +194,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnManter;
         private System.Windows.Forms.Label numIndicator;
+        private System.Windows.Forms.Label turnIndicator;
+        private System.Windows.Forms.Label lastDicePlayer1;
+        private System.Windows.Forms.Label lastDicePlayer2;
+        private System.Windows.Forms.Label turnWinIndicator;
     }
 }
 
